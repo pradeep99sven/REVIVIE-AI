@@ -1,0 +1,900 @@
+# MASTER DEVELOPMENT PROMPT – REVIVE AI
+## AI-Powered Smart E-Waste Detection, GPS Tracking and Collection Management System
+
+# R – ROLE
+
+Act as a senior AI/ML engineer, full-stack developer, computer vision specialist, drone technology architect, GPS tracking engineer, database architect and professional UI/UX designer with over 20 years of industry experience.
+
+You are responsible for transforming the existing project into a professional, intelligent, scalable web application named **ReVive AI**.
+
+Think and work as a multidisciplinary engineering team.
+
+Your responsibilities include:
+
+1. Designing a modern AI-powered e-waste detection platform.
+2. Developing computer vision models to identify electronic waste.
+3. Integrating drone image processing and aerial waste monitoring.
+4. Implementing GPS-based waste location tracking.
+5. Developing smart collection assignment and workforce tracking.
+6. Building an administrator dashboard for complete operational monitoring.
+7. Creating an attractive, responsive and professional user experience.
+8. Ensuring that all major functionalities are connected to a working backend and database.
+
+Do not build a static dashboard or a simple waste-reporting website. Develop a functional end-to-end e-waste management ecosystem.
+
+---
+
+# C – CONTEXT
+
+**Project Name:** ReVive AI
+
+**Project Category:** Artificial Intelligence, E-Waste Management, Computer Vision, Drone Technology, GPS Tracking and Sustainable Recycling.
+
+## 1. Problem Statement
+
+Electronic waste is increasing rapidly due to the frequent replacement of electronic gadgets and devices.
+
+Many people have unused, unwanted or damaged electronic gadgets stored in their homes, offices and institutions. Other electronic waste is discarded in unauthorized locations, streets and open dumping areas.
+
+The major challenges include:
+
+- People do not know where or how to dispose of unused electronic gadgets.
+- Electronic waste is often mixed with ordinary garbage.
+- Illegal e-waste dumping locations are difficult to identify and monitor.
+- Waste collection teams lack centralized location information.
+- Collection activities are difficult to track in real time.
+- Recycling organizations may not have accurate information about collected materials.
+- Valuable reusable electronic components are often wasted instead of being recovered.
+
+## 2. Proposed Solution
+
+ReVive AI is an intelligent e-waste detection, reporting, location tracking and collection management platform.
+
+The system enables citizens, organizations and institutions to report unused or unwanted electronic gadgets through image uploads.
+
+AI analyzes uploaded images and identifies the type of electronic waste.
+
+Drones capture aerial images of dumping areas and help detect, map and monitor e-waste accumulation locations.
+
+GPS technology records reported waste locations and tracks authorized collection workers during assigned collection activities.
+
+Administrators monitor waste reports, drone captures, collection orders, workers, inspections and recovery operations through a centralized dashboard.
+
+The physical waste is collected by human collection teams, transported to designated facilities, inspected and directed towards reuse, refurbishment, recycling or safe disposal.
+
+**Core Vision: Turn unused electronics and improperly discarded e-waste into tracked, recoverable resources.**
+
+## 3. Target Users
+
+Build the platform around four primary user groups:
+
+### A. Citizens / Waste Contributors
+
+- Report unused electronic gadgets.
+- Upload gadget photographs.
+- Enter pickup addresses.
+- Share GPS locations.
+- Request collection.
+- Track collection status.
+- View collection history.
+
+### B. Administrators / Managers
+
+- Monitor the complete system.
+- Manage users and collection teams.
+- View detected e-waste locations.
+- Review drone captures.
+- Approve or reject collection requests.
+- Assign collection orders.
+- Monitor live GPS locations.
+- Manage recycling and recovery records.
+- Generate reports.
+
+### C. Collection Workers
+
+- View assigned collection orders.
+- Navigate to collection locations.
+- Access GPS navigation.
+- Update collection status.
+- Upload collection evidence.
+- Record collected item quantities.
+- Report inaccessible or incorrect locations.
+
+### D. Drone Operators
+
+- Register drone missions.
+- Upload aerial images.
+- View detected waste locations.
+- Monitor assigned survey areas.
+- Submit drone mission reports.
+
+---
+
+# A – ACTION
+
+Develop ReVive AI by implementing the following modules.
+
+## MODULE 1: Professional Landing Page
+
+Create a modern landing page with:
+
+- ReVive AI logo and branding.
+- Hero heading: "Give Your E-Waste a Second Life."
+- Supporting text explaining AI-powered e-waste detection and collection.
+- Report Your E-Waste button.
+- Explore Our Mission button.
+- How It Works section.
+- AI detection feature showcase.
+- Drone-based monitoring section.
+- GPS-powered collection explanation.
+- Recycling and sustainability benefits.
+- Impact statistics based on real application data.
+- Contact and footer sections.
+
+Use relevant environmental and electronic recycling imagery.
+
+## MODULE 2: Authentication and Role-Based Access
+
+Implement secure registration and login.
+
+Provide different interfaces according to user roles:
+
+- Citizen.
+- Administrator.
+- Collection Worker.
+- Drone Operator.
+
+Features:
+
+- User registration.
+- Login and logout.
+- Secure password hashing.
+- User profile management.
+- Role-based authorization.
+- Protected dashboard pages.
+- Password recovery.
+
+Users should only access features permitted by their assigned roles.
+
+## MODULE 3: Citizen E-Waste Reporting
+
+Create a simple interface where citizens can report unwanted electronic gadgets.
+
+Required fields:
+
+- Gadget image upload.
+- Gadget name (optional).
+- Gadget category.
+- Condition: Working, Damaged, Non-working or Unknown.
+- Approximate quantity.
+- Pickup address.
+- GPS location.
+- Contact information.
+- Additional description.
+
+Provide two reporting options:
+
+1. Report a single unused electronic gadget.
+2. Report multiple electronic gadgets or a bulk e-waste collection.
+
+After submission:
+
+- Generate a unique report ID.
+- Save the information to the database.
+- Show the submitted report status.
+- Notify the administrator.
+- Allow the user to track the collection request.
+
+Do not automatically approve collection requests without the required validation.
+
+## MODULE 4: AI-Powered E-Waste Image Detection
+
+Develop a computer vision module that identifies electronic gadgets from uploaded images.
+
+Detect supported categories such as:
+
+- Laptops.
+- Desktop computers.
+- Mobile phones.
+- Tablets.
+- Keyboards.
+- Computer mice.
+- Cables and wires.
+- Circuit boards.
+- Printers.
+- Monitors.
+- Chargers.
+- Batteries.
+- Other electronic components.
+
+Recommended technologies:
+
+- Python.
+- OpenCV.
+- YOLO-based object detection.
+- PyTorch.
+- Suitable pretrained computer vision models.
+
+Expected functionality:
+
+1. Receive uploaded images.
+2. Validate image quality.
+3. Detect electronic objects.
+4. Identify object categories.
+5. Display bounding boxes.
+6. Estimate the number of visible objects.
+7. Display model detection confidence.
+8. Save detection results.
+9. Allow manual correction when AI predictions are wrong.
+
+Important: Do not claim that image-based detection can determine whether an item is functional, reusable or recyclable. That classification requires additional inspection and relevant information.
+
+## MODULE 5: Drone-Based E-Waste Detection
+
+Create a dedicated Drone Captures module.
+
+Purpose: Identify and monitor unauthorized or accumulated e-waste dumping locations using aerial images.
+
+Features:
+
+- Drone mission registration.
+- Drone identification.
+- Survey area selection.
+- Aerial image upload.
+- Image gallery.
+- Capture date and time.
+- GPS coordinates.
+- Drone altitude and direction metadata, when available.
+- AI-based waste detection.
+- Object classification.
+- Waste hotspot identification.
+- Detection history.
+- Manual verification by an administrator.
+
+Display AI-detected objects with bounding boxes and category labels.
+
+Create a system that can identify potential e-waste accumulation areas from aerial imagery.
+
+Use drone GPS metadata or verified geotagged images to associate detections with actual coordinates.
+
+Do not fabricate real-time drone telemetry. Simulated drone data may be used in demo mode and must be clearly labelled as simulated.
+
+## MODULE 6: Interactive GPS Waste Management Map
+
+Create an advanced interactive map similar to the provided reference design.
+
+Use Leaflet with OpenStreetMap or another properly configured map provider.
+
+Display:
+
+- Citizen-reported e-waste locations.
+- AI-detected dumping areas.
+- Approved collection orders.
+- Active collection workers.
+- Collection vehicles.
+- Recycling and recovery centers.
+
+Use distinct map markers:
+
+- Red: Critical or unverified dumping locations.
+- Blue: Pending collection orders.
+- Green: Active collection.
+- Orange: Recovery and recycling centers.
+
+Map functionality:
+
+- Zoom in and zoom out.
+- Map and satellite views, where supported by the map provider.
+- Search by location.
+- Filter by waste category.
+- Filter by collection status.
+- Click markers to view detailed information.
+- View worker locations.
+- Display collection routes.
+- View location-specific reports.
+
+Use actual coordinates from database records.
+
+Respect location-sharing permissions and do not expose citizens' private addresses publicly.
+
+## MODULE 7: Smart Collection Order Management
+
+Develop an intelligent collection assignment system.
+
+When a citizen reports e-waste or a verified drone detection creates a collection requirement:
+
+1. Create a collection request.
+2. Generate a unique order ID.
+3. Verify the reported location.
+4. Review the estimated waste quantity.
+5. Identify available collection workers.
+6. Assign the order to a suitable worker.
+7. Notify the assigned worker.
+8. Update the collection status.
+
+Collection statuses:
+
+- New Request.
+- Under Review.
+- Approved.
+- Assigned.
+- Collection Started.
+- Collected.
+- Inspection Pending.
+- Completed.
+- Rejected.
+
+Provide manual assignment and an optional smart assignment feature.
+
+Smart assignment can consider:
+
+- Worker availability.
+- Distance to the collection site.
+- Vehicle capacity.
+- Waste type.
+- Estimated collection quantity.
+
+Never assign a worker to multiple incompatible collection jobs.
+
+## MODULE 8: Real-Time GPS Collection Worker Tracking
+
+Develop a location tracking module for collection workers.
+
+Features:
+
+- Worker live location, with consent.
+- GPS coordinates.
+- Assigned collection locations.
+- Distance to destination.
+- Route visualization.
+- Collection progress.
+- Estimated arrival time, where supported.
+- Worker availability status.
+
+Workers should be able to:
+
+- Start a collection mission.
+- Share their location while on duty.
+- Navigate to the assigned location.
+- Confirm arrival.
+- Upload collection photographs.
+- Record collected quantities.
+- Mark orders as completed.
+
+Use browser geolocation or a mobile-compatible location-sharing interface.
+
+Implement location update intervals and role-based access.
+
+Tracking must only operate during authorized work sessions.
+
+## MODULE 9: Collection Team Dashboard
+
+Create a separate dashboard for collection workers.
+
+Include:
+
+- Today's assigned orders.
+- Pending collections.
+- Completed collections.
+- Current active mission.
+- Navigation map.
+- Collection history.
+- Notifications.
+- Profile and availability.
+
+Use large, easy-to-understand buttons suitable for field workers using mobile phones.
+
+## MODULE 10: Waste Inspection and Classification
+
+After collection, collected materials must pass through an inspection stage.
+
+Create an inspection interface with:
+
+- Collection order ID.
+- Item photographs.
+- Gadget category.
+- Quantity.
+- Physical condition.
+- Inspection notes.
+- Inspection date.
+- Inspector information.
+
+Classify items into:
+
+1. Working and reusable.
+2. Repairable or suitable for refurbishment.
+3. Non-working and suitable for authorized recycling.
+4. Hazardous or requiring specialized handling.
+5. Unknown – requiring further inspection.
+
+The classification must combine AI assistance with human verification.
+
+Pay special attention to batteries and hazardous electronic components.
+
+## MODULE 11: Recycling and Recovery Management
+
+Create a Recovery module.
+
+Track the final destination of collected materials.
+
+Features:
+
+- Reusable item inventory.
+- Refurbishment inventory.
+- Recycling inventory.
+- Hazardous waste inventory.
+- Recovery center details.
+- Material transfer records.
+- Recovered quantity.
+- Processing status.
+- Final disposal or recycling confirmation.
+
+Where possible, show the quantity of items and materials recovered.
+
+Do not claim environmental benefits or carbon savings without a transparent calculation methodology and verified input data.
+
+## MODULE 12: Notifications and Alerts
+
+Develop a notification system for:
+
+- New collection requests.
+- Request approval.
+- Worker assignment.
+- Collection started.
+- Collection completed.
+- Inspection updates.
+- Critical dumping site detection.
+- Drone mission completion.
+- Recovery updates.
+
+Display notifications in the administrator and relevant user dashboards.
+
+## MODULE 13: Reports and Analytics Dashboard
+
+Build an advanced analytics module.
+
+Display real database-based statistics:
+
+- Total reported gadgets.
+- Total detected e-waste locations.
+- Pending collection requests.
+- Active collection orders.
+- Completed collections.
+- Total collected items.
+- Reusable items.
+- Recycled items.
+- Hazardous items awaiting safe handling.
+- Collection team performance.
+- Waste hotspots by location.
+- Monthly collection trends.
+
+Include:
+
+- Interactive charts.
+- Date filters.
+- Category filters.
+- Location filters.
+- Exportable reports.
+
+Never use hardcoded statistics as if they were real operational results.
+
+## MODULE 14: Administration and Settings
+
+Create an administrator panel for:
+
+- User management.
+- Worker management.
+- Drone management.
+- Waste category management.
+- Collection order management.
+- Map configuration.
+- Recycling center management.
+- System notifications.
+- Data export.
+- System configuration.
+
+---
+
+# F – FORMAT
+
+## 1. Recommended Technology Stack
+
+### Frontend
+
+- React.js.
+- Vite.
+- Tailwind CSS.
+- Lucide React.
+- Recharts.
+- Leaflet / React Leaflet.
+
+### Backend
+
+- Python.
+- FastAPI.
+- REST API.
+- Pydantic.
+- SQLAlchemy.
+
+### Database
+
+- PostgreSQL for scalable deployment.
+- SQLite for the initial prototype.
+
+### Artificial Intelligence
+
+- YOLO-based object detection.
+- PyTorch.
+- OpenCV.
+- Image preprocessing.
+- Optional image classification models.
+
+### Location and Mapping
+
+- GPS.
+- Browser Geolocation API.
+- Leaflet.
+- OpenStreetMap.
+- Routing API, where available.
+
+### Drone Integration
+
+- Drone image uploads.
+- GPS metadata extraction.
+- Optional drone telemetry integration.
+- Optional DJI or compatible drone SDK integration, subject to hardware support.
+
+## 2. Project Structure
+
+Create a clean modular structure:
+
+```text
+ReViveAI/
+├── frontend/
+│   └── src/
+│       ├── components/
+│       ├── pages/
+│       ├── layouts/
+│       ├── services/
+│       ├── hooks/
+│       └── assets/
+├── backend/
+│   └── app/
+│       ├── api/
+│       ├── models/
+│       ├── schemas/
+│       ├── services/
+│       ├── ai/
+│       ├── drone/
+│       ├── gps/
+│       ├── database/
+│       └── main.py
+├── ml_models/
+├── uploads/
+├── tests/
+├── documentation/
+├── requirements.txt
+├── README.md
+└── .env.example
+```
+
+## 3. UI/UX DESIGN REFERENCE – STRICT DESIGN AND LAYOUT REQUIREMENTS
+
+Use ALL uploaded ReVive AI dashboard screenshots and reference images as the primary visual design references.
+
+The uploaded images are important design references. Study them before implementing the interface.
+
+Do not ignore, replace or unnecessarily redesign the provided visual references.
+
+Maintain the same branding and visual identity throughout the application.
+
+### A. CRITICAL SIDEBAR RESTRICTIONS
+
+**THE APPLICATION MUST HAVE ZERO EXTRA SIDEBARS.**
+
+Follow these rules strictly:
+
+1. Do not create additional sidebars.
+2. Do not create secondary sidebars.
+3. Do not create nested sidebars.
+4. Do not create duplicate navigation panels.
+5. Do not add a second sidebar on the right side.
+6. Do not create separate sidebars for individual dashboard pages.
+7. Do not generate a new sidebar when switching between modules.
+8. Do not allow individual components to independently create navigation sidebars.
+9. Do not add decorative panels that look like additional navigation sidebars.
+10. Do not create multiple navigation columns.
+11. Do not duplicate navigation links in different sidebars.
+12. Do not introduce unnecessary fixed-width panels that reduce the main content area.
+
+There must be only ONE consistent sidebar navigation system in the administrator dashboard.
+
+All administrator pages must reuse the same navigation component.
+
+When switching between Dashboard, Map, Drone Captures, Collection, Inspection, Recovery, Reports and Settings, the existing navigation must remain consistent.
+
+**Never generate another sidebar when opening a different module or page.**
+
+### B. DASHBOARD LAYOUT
+
+- Use one consistent dashboard layout.
+- Use the full available screen width.
+- Keep only the intended navigation sidebar.
+- Place the main content area beside the existing sidebar.
+- Do not add extra navigation panels.
+- Avoid unnecessary horizontal scrolling.
+- Maintain consistent spacing and alignment.
+- Use available screen space efficiently.
+- Keep cards, tables, maps and charts properly aligned.
+- Maintain consistent headers and navigation across all pages.
+- Do not duplicate headers or navigation components.
+- Ensure the layout adapts properly to different screen sizes.
+
+### C. VISUAL DESIGN
+
+Maintain the following design identity:
+
+- Dark forest-green sidebar.
+- Light mint-green background.
+- White dashboard cards.
+- Green primary action buttons.
+- Rounded corners.
+- Professional typography.
+- Subtle shadows.
+- Clear icons.
+- Nature-inspired visual elements.
+- Clean spacing.
+- Responsive layout.
+
+### D. MAIN ADMIN SIDEBAR NAVIGATION
+
+The single administrator sidebar must contain:
+
+1. Dashboard.
+2. Drone Captures.
+3. Map.
+4. Received Orders.
+5. Collection.
+6. Inspection.
+7. Recovery.
+8. Reports.
+9. Settings.
+
+Do not add duplicate navigation menus.
+
+Create separate role-based navigation for citizens and collection workers without introducing additional sidebars within their respective layouts.
+
+### E. IMAGE AND SCREENSHOT REFERENCE INSTRUCTIONS
+
+The uploaded pictures are visual references for the ReVive AI application.
+
+Follow these instructions:
+
+1. Analyze every uploaded reference image before building the UI.
+2. Identify the visual structure, layout, colors, cards, typography, spacing and navigation.
+3. Reproduce the intended design using actual frontend components.
+4. Use the uploaded screenshots as references for the corresponding pages.
+5. Maintain consistent branding across all modules.
+6. Use uploaded logos and visual assets where provided.
+7. Do not stretch, distort or unnecessarily crop reference images.
+8. Do not simply insert screenshots as dashboard backgrounds.
+9. Do not replace functional components with static screenshots.
+10. Build real buttons, cards, charts, navigation and interactive elements based on the references.
+
+If a reference image is provided for a particular page, use it as the primary design reference for that page.
+
+If a reference image is not provided for a page, extend the existing ReVive AI design language consistently.
+
+### F. RESPONSIVE DESIGN
+
+The application must work properly on:
+
+- Desktop computers.
+- Laptops.
+- Tablets.
+- Mobile phones.
+
+On smaller screens, use a responsive navigation approach such as a collapsible menu or navigation drawer.
+
+Do not create a second permanent sidebar for mobile.
+
+### G. COMPONENT ARCHITECTURE
+
+Create a reusable dashboard layout.
+
+Every administrator page must reuse the same parent layout and navigation component.
+
+Use shared components for:
+
+- Sidebar navigation.
+- Header.
+- Dashboard cards.
+- Tables.
+- Charts.
+- Filters.
+- Notifications.
+- User profiles.
+
+Before creating a new navigation component, check whether the existing layout already provides that functionality.
+
+Do not duplicate existing components.
+
+**FINAL UI RULE: ONE NAVIGATION SYSTEM, ONE CONSISTENT DASHBOARD LAYOUT, ZERO EXTRA SIDEBARS.**
+
+Do not change the application's required functionality, database, backend, AI modules or collection workflows when implementing these design restrictions.
+
+## 4. Database Design
+
+Create appropriate relational database tables for:
+
+- Users.
+- User Roles.
+- E-Waste Reports.
+- Detected Objects.
+- Drone Missions.
+- Drone Captures.
+- Waste Locations.
+- Collection Orders.
+- Collection Workers.
+- GPS Location History.
+- Collection Records.
+- Inspections.
+- Recovery Centers.
+- Recovered Materials.
+- Notifications.
+
+Define proper relationships, indexes, constraints and timestamps.
+
+## 5. Required Deliverables
+
+Provide:
+
+- Complete frontend source code.
+- Complete Python backend.
+- Database schemas.
+- Working APIs.
+- AI object detection integration.
+- Drone image processing.
+- GPS tracking.
+- Interactive waste management map.
+- Collection assignment workflow.
+- Inspection and recovery modules.
+- Authentication and authorization.
+- Testing code.
+- README.
+- Installation instructions.
+- Environment variable template.
+- Demo dataset.
+- Hackathon demonstration instructions.
+
+---
+
+# T – TONE
+
+The entire application should communicate a professional, trustworthy, innovative and environmentally responsible identity.
+
+Use simple language so citizens, workers and administrators can understand the system.
+
+The visual identity should communicate:
+
+- Sustainability.
+- Smart technology.
+- Environmental responsibility.
+- Transparency.
+- Efficiency.
+- Innovation.
+
+Avoid cluttered layouts, neon colors, unnecessary animations and complicated navigation.
+
+The interface should look like a professional environmental technology SaaS platform rather than a basic college project.
+
+---
+
+# FINAL EXECUTION INSTRUCTIONS
+
+Develop ReVive AI in the following phases:
+
+## Phase 1 – Architecture and Design
+
+- Finalize requirements.
+- Design system architecture.
+- Create database schema.
+- Design responsive UI wireframes.
+- Define role permissions.
+- Analyze all uploaded visual references.
+- Establish the shared dashboard layout.
+- Establish the single-sidebar navigation architecture.
+
+## Phase 2 – Core Application
+
+- Build landing page.
+- Implement authentication.
+- Build citizen reporting.
+- Build admin dashboard.
+- Implement database operations.
+
+## Phase 3 – AI and Drone Intelligence
+
+- Integrate object detection.
+- Build image upload and analysis.
+- Implement drone capture management.
+- Implement waste hotspot detection.
+- Add detection verification.
+
+## Phase 4 – GPS and Collection
+
+- Build interactive map.
+- Implement GPS location reporting.
+- Develop worker tracking.
+- Implement collection assignment.
+- Build collection status updates.
+
+## Phase 5 – Inspection and Recovery
+
+- Implement inspection.
+- Build material classification.
+- Create recovery center management.
+- Track final material destinations.
+
+## Phase 6 – Testing and Deployment
+
+- Test every user role.
+- Test image detection.
+- Test location tracking.
+- Test order assignment.
+- Test database operations.
+- Validate map accuracy.
+- Test security and privacy.
+- Test responsive layouts.
+- Verify that no extra sidebars have been generated.
+- Fix bugs.
+- Prepare deployment.
+
+## IMPORTANT DEVELOPMENT RULES
+
+- Do not generate a non-functional UI.
+- Do not hardcode live dashboard statistics.
+- Do not fake GPS tracking.
+- Do not claim actual drone connectivity without compatible hardware.
+- Use clearly labelled simulation mode for hackathon demonstrations when real devices are unavailable.
+- Do not claim that AI detection alone verifies an object's condition.
+- Ensure that physical collection is performed by authorized human collection teams.
+- Ensure that users can only access their permitted information.
+- Use the uploaded screenshots as visual references.
+- Do not unnecessarily change the original design identity.
+- Do not generate additional sidebars.
+- Do not duplicate existing navigation components.
+- Ensure that all dashboard modules use the same shared layout.
+- Make sure all major features are connected to the backend and database.
+- Do not stop after generating the landing page or dashboard.
+- Implement all required modules and their workflows.
+- If an external API or hardware integration is unavailable, provide a clearly labelled demo implementation rather than pretending it is connected.
+
+## DEVELOPMENT ORDER
+
+Before generating the complete application:
+
+1. Analyze the uploaded reference images.
+2. Understand the complete project requirements.
+3. Establish the application architecture.
+4. Create the shared design system.
+5. Create the single reusable navigation layout.
+6. Implement the frontend pages.
+7. Connect the backend and database.
+8. Implement the AI, drone and GPS modules.
+9. Test all major workflows.
+10. Verify the final UI against the uploaded references.
+
+Do not independently redesign each page. Maintain one unified design system throughout the application.
+
+---
+
+# FINAL PROJECT GOAL
+
+Transform ReVive AI into an intelligent platform that connects citizens, AI-powered e-waste detection, drones, GPS tracking, collection teams and recycling facilities into one coordinated waste management ecosystem.
+
+**"Detect. Locate. Collect. Recover. Revive."**
+
+**FINAL NON-NEGOTIABLE DESIGN REQUIREMENT:**
+
+Create a professional ReVive AI application using the uploaded reference images, with one consistent dashboard navigation system and absolutely no extra, duplicate or secondary sidebars.

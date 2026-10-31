@@ -1,0 +1,6 @@
+{
+  "name": "ReVive AI - Smart E-Waste Detection & Collection Ecosystem",
+  "description": "AI-powered e-waste detection, drone aerial monitoring, GPS tracking, collection order dispatch, inspection, and recovery ecosystem.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
